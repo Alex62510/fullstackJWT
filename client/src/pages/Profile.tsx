@@ -51,6 +51,7 @@ export const Profile = () => {
                 },
                 (error) => {
                     setImageError(true)
+                    console.log(error)
                 },
                 () => {
                     getDownloadURL(uploadTask.snapshot.ref)
